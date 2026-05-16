@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mainContainer{
+    height: 100vh;
+    width: 100vw;
+    background-color:rgb(45, 45, 45) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timerContainer{
+    width: 600px;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: rgb(109, 108, 108);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+#timerContainer h1{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+#timerDisplay{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#timerDisplay div{
+    font-size: 1.5rem;
+    background-color: rgb(182, 182, 182);
+    padding: 0.8rem;
+    border-radius: 5px;
+    color: black;
+}
+
+#progress h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+#progressBar{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(182, 182, 182);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+}
+
+#progressFill{
+    height: 100%;
+    width: 0%;
+    background-color: rgb(107, 209, 79);
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+#inputTime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    gap: 7px;
+}
+
+#startBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+#startButton{
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    background-color: rgba(107, 209, 79, 0.502);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+}
+#startButton:hover{
+    background-color: rgba(107, 209, 79, 0.8);
+}
+
+#resetButton{
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    background-color: rgba(255, 71, 71, 0.505);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+#resetButton:hover{
+    background-color: rgba(255, 71, 71, 0.8);
+}
+
+#pauseButton{
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 71, 0.505);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+#pauseButton:hover{
+    background-color: rgba(255, 255, 71, 0.8);
+}

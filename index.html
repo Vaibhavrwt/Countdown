@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="mainContainer">
+        <div id="timerContainer">
+            <div id="inputTime">
+                <label for="targetDate">Enter Target Date and Time:</label>
+                <input type="datetime-local" id="targetDate">
+            </div>
+            <div id="startBtn">
+                <button id="startButton" onclick="startCountdown()">Start Countdown</button>
+                <button id="pauseButton" onclick="pauseCountdown()">Pause</button>
+                <button id="resetButton" onclick="resetCountdown()">Reset</button>
+            </div>
+            <h1>Countdown Timer</h1>
+            <div id="timerDisplay">
+                <div>
+                    <span id="days">00</span>
+                    Days 
+                </div>
+                <div>
+                    <span id="hours">00</span>
+                    Hrs
+                </div>
+                <div>
+                    <span id="minutes">00</span>
+                    Mins
+                </div>
+                <div>
+                    <span id="seconds">00</span>
+                    Secs
+                </div>
+            </div>
+            <div id="progress">
+                <h2>Progress</h2>
+                <div id="progressBar">
+                    <div id="progressFill">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
